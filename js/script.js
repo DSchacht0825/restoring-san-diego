@@ -1,5 +1,43 @@
 // Restoring San Diego - JavaScript
 
+// Mobile Navigation Toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const mobileNavMenu = document.getElementById('mobileNavMenu');
+    const navMenuLeft = document.getElementById('navMenuLeft');
+    const navMenuRight = document.getElementById('navMenuRight');
+    
+    if (hamburger && mobileNavMenu) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileNavMenu.classList.toggle('active');
+            navMenuLeft.classList.toggle('active');
+            navMenuRight.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileNavLinks = mobileNavMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                mobileNavMenu.classList.remove('active');
+                navMenuLeft.classList.remove('active');
+                navMenuRight.classList.remove('active');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!hamburger.contains(event.target) && !mobileNavMenu.contains(event.target)) {
+                hamburger.classList.remove('active');
+                mobileNavMenu.classList.remove('active');
+                navMenuLeft.classList.remove('active');
+                navMenuRight.classList.remove('active');
+            }
+        });
+    }
+});
+
 // Leader Bio Toggle Functionality
 function toggleBio(leaderId) {
     const bioElement = document.getElementById(`bio-${leaderId}`);
