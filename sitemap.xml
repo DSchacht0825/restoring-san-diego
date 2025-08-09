@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://restoringsandiego.org/</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://restoringsandiego.org/images/hero/hero-background.jpg</image:loc>
+      <image:title>At-Risk Youth Programs San Diego</image:title>
+      <image:caption>Comprehensive gang prevention and youth social services</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://restoringsandiego.org/who-we-are.html</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Team Page -->
+  <url>
+    <loc>https://restoringsandiego.org/team.html</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- HITS Program -->
+  <url>
+    <loc>https://restoringsandiego.org/hits.html</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://restoringsandiego.org/images/Hits/hits.jpg</image:loc>
+      <image:title>HITS Gang Prevention Curriculum</image:title>
+      <image:caption>Honor, Integrity, Tenacity, Sacrifice program for at-risk youth</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Creative Arts Program -->
+  <url>
+    <loc>https://restoringsandiego.org/art.html</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://restoringsandiego.org/images/arts/art-2.jpg</image:loc>
+      <image:title>Creative Arts Youth Programs</image:title>
+      <image:caption>Art therapy and creative expression for at-risk youth</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Music Program -->
+  <url>
+    <loc>https://restoringsandiego.org/music.html</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://restoringsandiego.org/images/music/Music-1.jpg</image:loc>
+      <image:title>Music Production Programs</image:title>
+      <image:caption>Beat making and rap programs for at-risk youth</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
