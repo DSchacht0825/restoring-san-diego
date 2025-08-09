@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://restoringsandiego.org/sitemap.xml
+
+# Priority pages for at-risk youth services
+Allow: /index.html
+Allow: /hits.html
+Allow: /art.html
+Allow: /music.html
+Allow: /team.html
+Allow: /who-we-are.html
+
+# Allow all image directories
+Allow: /images/
+
+# Block system files
+Disallow: /css/
+Disallow: /js/
+Disallow: /.DS_Store
+Disallow: /*/.DS_Store
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
