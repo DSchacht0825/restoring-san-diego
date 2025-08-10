@@ -1844,6 +1844,27 @@ a:hover {
     .hero {
         padding-top: 100px; /* Account for navbar height + some spacing */
     }
+    
+    /* HITS page - keep 2x2 grid on mobile for the 4 pillars */
+    #hits .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+    }
+    
+    /* Make HITS service items more mobile friendly */
+    #hits .service-item {
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+    
+    #hits .service-item h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #hits .service-item ul {
+        font-size: 0.9rem;
+    }
 }
     
     /* Mobile Typography */
