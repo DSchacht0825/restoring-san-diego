@@ -1808,6 +1808,12 @@ a:hover {
         position: relative;
     }
     
+    /* Remove flex from nav-left and nav-right so they don't take up space */
+    .nav-left,
+    .nav-right {
+        flex: none !important;
+    }
+    
     .nav-logo {
         position: static !important;
         left: auto !important;
