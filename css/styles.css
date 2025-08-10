@@ -1845,12 +1845,15 @@ a:hover {
         padding-top: 100px; /* Account for navbar height + some spacing */
     }
     
-    /* HITS page - single column layout on mobile, one pillar at a time */
-    #hits .services-grid {
+    /* HITS page - FORCE single column layout on mobile */
+    section#hits .services-grid,
+    #hits .services-grid,
+    body .hero#hits .services-grid,
+    .curriculum-section .services-grid {
         grid-template-columns: 1fr !important;
         gap: 2rem !important;
-        max-width: 100%;
-        margin: 0 auto;
+        max-width: 100% !important;
+        margin: 0 auto !important;
     }
     
     /* Make HITS service items centered and mobile friendly */
