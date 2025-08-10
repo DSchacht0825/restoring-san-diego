@@ -1719,8 +1719,10 @@ a:hover {
     z-index: 9999;
     opacity: 0;
     transition: opacity 0.3s ease;
-    overflow-y: auto;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
 }
 
 .mobile-nav-overlay.active {
@@ -1759,8 +1761,9 @@ a:hover {
     display: block;
     list-style: none;
     margin: 0;
-    padding: 20px 0 60px 0;
+    padding: 20px 0 150px 0;
     text-align: center;
+    min-height: calc(100vh - 80px);
 }
 
 .mobile-nav-links li {
@@ -1781,6 +1784,21 @@ a:hover {
 .mobile-nav-links a:hover {
     background: rgba(255,255,255,0.1);
     color: #F5A01D;
+}
+
+/* Extra spacing for donate button at bottom */
+.mobile-nav-links li:last-child {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.mobile-nav-links li:last-child a {
+    background: rgba(245, 160, 29, 0.1);
+    border: 2px solid #F5A01D;
+    border-radius: 25px;
+    padding: 20px 30px;
+    margin: 20px;
+    display: inline-block;
 }
 
 /* FRESH MOBILE NAVIGATION - CLEAN START */
