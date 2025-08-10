@@ -280,7 +280,7 @@ a:hover {
     margin-left: var(--spacing-md);
 }
 
-/* Hamburger Menu */
+/* Hamburger Menu - Hidden on desktop */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -308,8 +308,9 @@ a:hover {
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
-/* Mobile Navigation Menu */
+/* Mobile Navigation Menu - Hidden on desktop */
 .mobile-nav-menu {
+    display: none;
     position: fixed;
     top: 80px;
     left: 0;
@@ -1711,6 +1712,7 @@ a:hover {
 }
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
     /* Mobile Navigation */
     .nav-menu {
@@ -1748,6 +1750,7 @@ a:hover {
     }
     
     .mobile-nav-menu {
+        display: block;
         position: fixed;
         top: 80px;
         left: 0;
