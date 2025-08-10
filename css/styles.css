@@ -2350,12 +2350,14 @@ a:hover {
     }
 }
 
-/* H.I.T.S. Four Pillars - Force 2x2 Grid */
-#hits-page .services-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 2rem !important;
-    max-width: 1000px !important;
-    margin: 0 auto !important;
+/* H.I.T.S. Four Pillars - Force 2x2 Grid for Desktop */
+@media (min-width: 769px) {
+    #hits-page .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem !important;
+        max-width: 1000px !important;
+        margin: 0 auto !important;
+    }
 }
 
 /* H.I.T.S. Impact Features - 3x2 Grid */
