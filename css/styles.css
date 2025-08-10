@@ -2354,6 +2354,14 @@ a:hover {
     }
 }
 
+/* Homepage Services - Force 3-column layout for Desktop */
+@media (min-width: 769px) {
+    body:not([id]) .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+        gap: var(--spacing-xl) !important;
+    }
+}
+
 /* H.I.T.S. Impact Features - 3x2 Grid */
 #hits-page .about-features {
     grid-template-columns: repeat(3, 1fr) !important;
