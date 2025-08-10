@@ -2362,6 +2362,14 @@ a:hover {
     }
 }
 
+/* Contact Info (Get Involved) - Force 3-column layout for Desktop */
+@media (min-width: 769px) {
+    .contact-info {
+        grid-template-columns: 1fr 1fr 1fr !important;
+        gap: 2rem !important;
+    }
+}
+
 /* H.I.T.S. Impact Features - 3x2 Grid */
 #hits-page .about-features {
     grid-template-columns: repeat(3, 1fr) !important;
