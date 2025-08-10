@@ -1797,25 +1797,37 @@ a:hover {
         display: none;
     }
     
-    /* Remove flex space from nav-left and nav-right so logo can center */
-    .nav-left,
-    .nav-right {
-        flex: none;
+    /* Completely override nav-container for mobile - simple center approach */
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
     
-    /* Show hamburger - make it visible */
+    /* Mobile logo - center it properly */
+    .nav-logo {
+        position: static;
+        left: auto;
+        transform: none;
+    }
+    
+    .nav-logo .logo-img {
+        height: 50px;
+    }
+    
+    /* Hamburger - position absolute to right */
     .hamburger {
         display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     
     /* Make hamburger visible on all backgrounds */
     .hamburger span {
         background: #333;
-    }
-    
-    /* Keep desktop logo centering intact - don't override it */
-    .nav-logo .logo-img {
-        height: 50px;
     }
 }
     
