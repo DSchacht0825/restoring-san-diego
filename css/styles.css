@@ -1790,52 +1790,19 @@ a:hover {
     color: #F5A01D;
 }
 
-/* Simple Mobile Navigation */
+/* FRESH MOBILE NAVIGATION - CLEAN START */
 @media (max-width: 768px) {
+    /* Hide desktop menu items */
     .nav-menu {
-        display: none !important;
+        display: none;
     }
     
+    /* Show hamburger */
     .hamburger {
-        display: block !important;
-        position: absolute !important;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%) !important;
-        z-index: 1001;
+        display: flex;
     }
     
-    /* Ensure hamburger is always visible - dark on light, white on dark */
-    .hamburger span {
-        background: #000 !important;
-    }
-    
-    /* White hamburger for pages with dark navbar backgrounds */
-    #team-page .hamburger span,
-    body[style*="background"] .hamburger span {
-        background: #fff !important;
-    }
-    
-    .nav-container {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center;
-        padding: 0 20px;
-        position: relative;
-    }
-    
-    /* Remove flex from nav-left and nav-right so they don't take up space */
-    .nav-left,
-    .nav-right {
-        flex: none !important;
-    }
-    
-    .nav-logo {
-        position: static !important;
-        left: auto !important;
-        transform: none !important;
-    }
-    
+    /* Keep desktop logo centering intact - don't override it */
     .nav-logo .logo-img {
         height: 50px;
     }
