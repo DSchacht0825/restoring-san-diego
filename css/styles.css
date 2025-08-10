@@ -1797,9 +1797,14 @@ a:hover {
         display: none;
     }
     
-    /* Show hamburger */
+    /* Show hamburger - make it visible */
     .hamburger {
         display: flex;
+    }
+    
+    /* Make hamburger visible on all backgrounds */
+    .hamburger span {
+        background: #333;
     }
     
     /* Keep desktop logo centering intact - don't override it */
