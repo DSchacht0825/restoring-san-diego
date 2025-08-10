@@ -1813,6 +1813,7 @@ a:hover {
         max-width: none;
         margin: 0;
         padding: 0 20px;
+        background: red; /* DEBUG: See exact container bounds */
     }
     
     /* Mobile logo - center it properly */
@@ -1820,6 +1821,7 @@ a:hover {
         position: static;
         left: auto;
         transform: none;
+        background: yellow; /* DEBUG: See exact logo bounds */
     }
     
     .nav-logo .logo-img {
