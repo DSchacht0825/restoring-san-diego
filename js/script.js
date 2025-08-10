@@ -1,41 +1,43 @@
 // Restoring San Diego - JavaScript
 
-// Mobile Navigation Toggle
+// Simple Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
-    const mobileNavMenu = document.getElementById('mobileNavMenu');
-    const navMenuLeft = document.getElementById('navMenuLeft');
-    const navMenuRight = document.getElementById('navMenuRight');
+    const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+    const mobileClose = document.getElementById('mobileClose');
     
-    if (hamburger && mobileNavMenu) {
+    // Open mobile menu
+    if (hamburger && mobileNavOverlay) {
         hamburger.addEventListener('click', function() {
-            hamburger.classList.toggle('active');
-            mobileNavMenu.classList.toggle('active');
-            navMenuLeft.classList.toggle('active');
-            navMenuRight.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking on a link
-        const mobileNavLinks = mobileNavMenu.querySelectorAll('a');
-        mobileNavLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                hamburger.classList.remove('active');
-                mobileNavMenu.classList.remove('active');
-                navMenuLeft.classList.remove('active');
-                navMenuRight.classList.remove('active');
-            });
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            if (!hamburger.contains(event.target) && !mobileNavMenu.contains(event.target)) {
-                hamburger.classList.remove('active');
-                mobileNavMenu.classList.remove('active');
-                navMenuLeft.classList.remove('active');
-                navMenuRight.classList.remove('active');
-            }
+            mobileNavOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
         });
     }
+    
+    // Close mobile menu
+    function closeMobileMenu() {
+        if (mobileNavOverlay) {
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+    }
+    
+    if (mobileClose) {
+        mobileClose.addEventListener('click', closeMobileMenu);
+    }
+    
+    // Close when clicking on mobile nav links
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+    
+    // Close when pressing ESC key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeMobileMenu();
+        }
+    });
 });
 
 // Leader Bio Toggle Functionality
