@@ -389,6 +389,13 @@ a:hover {
     color: white;
 }
 
+#team .navbar .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
 /* Team Header Section */
 .team-header {
     position: relative;
@@ -866,6 +873,13 @@ a:hover {
 
 #who-we-are .navbar .nav-menu a {
     color: white;
+}
+
+#who-we-are .navbar .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
 /* Who We Are page specific hero overlay */
