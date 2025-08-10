@@ -1813,7 +1813,6 @@ a:hover {
         max-width: none;
         margin: 0;
         padding: 0 20px;
-        background: red; /* DEBUG: See exact container bounds */
     }
     
     /* Mobile logo - center it properly */
@@ -1821,7 +1820,6 @@ a:hover {
         position: static;
         left: auto;
         transform: none;
-        background: yellow; /* DEBUG: See exact logo bounds */
     }
     
     .nav-logo .logo-img {
@@ -1840,6 +1838,11 @@ a:hover {
     /* Make hamburger visible on all backgrounds */
     .hamburger span {
         background: #333;
+    }
+    
+    /* Fix navbar overlay on hero sections - add top padding */
+    .hero {
+        padding-top: 100px; /* Account for navbar height + some spacing */
     }
 }
     
