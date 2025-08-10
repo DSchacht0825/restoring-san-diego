@@ -6,20 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileNavOverlay = document.getElementById('mobileNavOverlay');
     const mobileClose = document.getElementById('mobileClose');
     
-    // Debug logging
-    console.log('Hamburger found:', !!hamburger);
-    console.log('Mobile overlay found:', !!mobileNavOverlay);
-    console.log('Mobile close found:', !!mobileClose);
-    
     // Open mobile menu
     if (hamburger && mobileNavOverlay) {
         hamburger.addEventListener('click', function() {
-            console.log('Hamburger clicked');
             mobileNavOverlay.classList.add('active');
             document.body.style.overflow = 'hidden'; // Prevent scrolling
         });
-    } else {
-        console.log('Missing elements for mobile nav');
     }
     
     // Close mobile menu

@@ -1798,6 +1798,22 @@ a:hover {
     
     .hamburger {
         display: block !important;
+        position: absolute !important;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%) !important;
+        z-index: 1001;
+    }
+    
+    /* Ensure hamburger is always visible - dark on light, white on dark */
+    .hamburger span {
+        background: #000 !important;
+    }
+    
+    /* White hamburger for pages with dark navbar backgrounds */
+    #team-page .hamburger span,
+    body[style*="background"] .hamburger span {
+        background: #fff !important;
     }
     
     .nav-container {
@@ -1822,13 +1838,6 @@ a:hover {
     
     .nav-logo .logo-img {
         height: 50px;
-    }
-    
-    .hamburger {
-        position: absolute !important;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%) !important;
     }
 }
     
