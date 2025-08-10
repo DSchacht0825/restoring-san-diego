@@ -396,6 +396,10 @@ a:hover {
     z-index: 10;
 }
 
+#team .hamburger span {
+    background: white;
+}
+
 /* Team Header Section */
 .team-header {
     position: relative;
@@ -880,6 +884,10 @@ a:hover {
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+}
+
+#who-we-are .hamburger span {
+    background: white;
 }
 
 /* Who We Are page specific hero overlay */
@@ -1821,17 +1829,38 @@ a:hover {
     
     /* Mobile navigation positioning */
     .nav-container {
-        justify-content: space-between;
+        justify-content: center;
+        position: relative;
     }
     
     .nav-logo {
-        position: relative;
+        position: static;
         left: auto;
         transform: none;
     }
     
     .nav-logo .logo-img {
         height: 60px;
+    }
+    
+    .hamburger {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    /* Specific fixes for team and who-we-are pages */
+    #team .nav-container,
+    #who-we-are .nav-container {
+        justify-content: center;
+    }
+    
+    #team .nav-logo,
+    #who-we-are .nav-logo {
+        position: static;
+        left: auto;
+        transform: none;
     }
 }
     
