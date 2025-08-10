@@ -1792,6 +1792,13 @@ a:hover {
 
 /* FRESH MOBILE NAVIGATION - CLEAN START */
 @media (max-width: 768px) {
+    /* Ensure navbar is above everything */
+    .navbar {
+        z-index: 9999;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+    }
+    
     /* Hide desktop menu items */
     .nav-menu {
         display: none;
@@ -1803,6 +1810,9 @@ a:hover {
         justify-content: center;
         align-items: center;
         position: relative;
+        max-width: none;
+        margin: 0;
+        padding: 0 20px;
     }
     
     /* Mobile logo - center it properly */
