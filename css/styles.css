@@ -1035,13 +1035,7 @@ a:hover {
     margin: 0 auto;
 }
 
-/* Mobile: single column */
-@media (max-width: 768px) {
-    #hits .services-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
+/* Moved mobile HITS rule to main mobile section */
 
 
 .service-item {
@@ -1884,6 +1878,12 @@ a:hover {
     .services-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
+    }
+    
+    /* HITS specific - ensure single column */
+    #hits .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
     }
     
     /* Mobile Contact */
