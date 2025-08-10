@@ -1845,25 +1845,32 @@ a:hover {
         padding-top: 100px; /* Account for navbar height + some spacing */
     }
     
-    /* HITS page - keep 2x2 grid on mobile for the 4 pillars */
+    /* HITS page - single column layout on mobile, one pillar at a time */
     #hits .services-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 1rem !important;
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        max-width: 100%;
+        margin: 0 auto;
     }
     
-    /* Make HITS service items more mobile friendly */
+    /* Make HITS service items centered and mobile friendly */
     #hits .service-item {
-        padding: 1.5rem 1rem;
+        padding: 2rem 1.5rem;
         text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
     }
     
     #hits .service-item h3 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
     }
     
     #hits .service-item ul {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        text-align: left;
+        max-width: 280px;
+        margin: 1rem auto 0;
     }
 }
     
