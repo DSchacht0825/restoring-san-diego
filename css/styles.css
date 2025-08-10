@@ -1027,13 +1027,7 @@ a:hover {
     gap: 1.5rem !important;
 }
 
-/* H.I.T.S. page - 4 pillars responsive */
-#hits .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+/* Remove redundant rule - handled by desktop media query below */
 
 /* Moved mobile HITS rule to main mobile section */
 
@@ -2352,7 +2346,7 @@ a:hover {
 
 /* H.I.T.S. Four Pillars - Force 2x2 Grid for Desktop */
 @media (min-width: 769px) {
-    #hits-page .services-grid {
+    body#hits-page .services-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 2rem !important;
         max-width: 1000px !important;
