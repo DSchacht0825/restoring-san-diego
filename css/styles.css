@@ -379,14 +379,18 @@ a:hover {
 
 
 /* Team page specific navbar - normal header style */
-#team .navbar {
+#team-page .navbar {
     position: relative;
     background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
     z-index: 1001;
 }
 
-#team .navbar .nav-menu a {
+#team-page .navbar .nav-menu a {
     color: white;
+}
+
+#team-page .hamburger span {
+    background: white;
 }
 
 
@@ -858,16 +862,7 @@ a:hover {
     }
 }
 
-/* Who We Are page navbar - normal header style */
-#who-we-are .navbar {
-    position: relative;
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
-    z-index: 1001;
-}
-
-#who-we-are .navbar .nav-menu a {
-    color: white;
-}
+/* Who We Are page navbar - normal header style - Remove specific CSS to use default */
 
 
 /* Who We Are page specific hero overlay */
@@ -1798,26 +1793,25 @@ a:hover {
 /* Simple Mobile Navigation */
 @media (max-width: 768px) {
     .nav-menu {
-        display: none;
+        display: none !important;
     }
     
     .hamburger {
-        display: block;
+        display: block !important;
     }
     
     .nav-container {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
+        display: flex !important;
+        justify-content: center !important;
         align-items: center;
         padding: 0 20px;
+        position: relative;
     }
     
     .nav-logo {
-        grid-column: 2;
-        position: static;
-        left: auto;
-        transform: none;
-        justify-self: center;
+        position: static !important;
+        left: auto !important;
+        transform: none !important;
     }
     
     .nav-logo .logo-img {
@@ -1825,10 +1819,10 @@ a:hover {
     }
     
     .hamburger {
-        grid-column: 3;
-        justify-self: end;
-        position: static;
-        transform: none;
+        position: absolute !important;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%) !important;
     }
 }
     
