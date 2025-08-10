@@ -389,16 +389,6 @@ a:hover {
     color: white;
 }
 
-#team .navbar .nav-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-}
-
-#team .hamburger span {
-    background: white;
-}
 
 /* Team Header Section */
 .team-header {
@@ -879,16 +869,6 @@ a:hover {
     color: white;
 }
 
-#who-we-are .navbar .nav-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-}
-
-#who-we-are .hamburger span {
-    background: white;
-}
 
 /* Who We Are page specific hero overlay */
 #who-we-are .hero-overlay {
@@ -1815,51 +1795,39 @@ a:hover {
     color: #F5A01D;
 }
 
-/* Simple Mobile Navigation - Clean Approach */
+/* Simple Mobile Navigation */
 @media (max-width: 768px) {
-    /* Hide desktop navigation on mobile */
     .nav-menu {
         display: none;
     }
     
-    /* Show hamburger on mobile */
     .hamburger {
-        display: flex;
+        display: block;
     }
     
-    /* Mobile navigation positioning */
     .nav-container {
-        justify-content: center;
-        position: relative;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        padding: 0 20px;
     }
     
     .nav-logo {
+        grid-column: 2;
         position: static;
         left: auto;
         transform: none;
+        justify-self: center;
     }
     
     .nav-logo .logo-img {
-        height: 60px;
+        height: 50px;
     }
     
     .hamburger {
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-    /* Specific fixes for team and who-we-are pages */
-    #team .nav-container,
-    #who-we-are .nav-container {
-        justify-content: center;
-    }
-    
-    #team .nav-logo,
-    #who-we-are .nav-logo {
+        grid-column: 3;
+        justify-self: end;
         position: static;
-        left: auto;
         transform: none;
     }
 }
