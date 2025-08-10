@@ -1714,39 +1714,68 @@ a:hover {
 /* Responsive Design */
 
 @media (max-width: 768px) {
-    /* Mobile Navigation */
-    .nav-menu {
+    /* Mobile Navigation - Complete reset */
+    .nav-menu,
+    .nav-left,
+    .nav-right {
         display: none !important;
     }
     
     .nav-container {
         padding: 0 1rem;
-        display: flex;
-        justify-content: space-between;
+        display: flex !important;
+        justify-content: center;
         align-items: center;
         position: relative;
+        height: 80px;
     }
     
     .nav-logo {
-        position: static;
-        left: auto;
-        transform: none;
-        flex: 1;
+        position: relative !important;
+        left: auto !important;
+        transform: none !important;
         display: flex;
         justify-content: center;
+        align-items: center;
+        z-index: 10;
     }
     
     .nav-logo .logo-img {
-        height: 70px;
+        height: 60px;
+        width: auto;
     }
     
     .hamburger {
-        display: flex;
+        display: flex !important;
         position: absolute;
         right: 1rem;
         top: 50%;
         transform: translateY(-50%);
         z-index: 1001;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 4px;
+    }
+    
+    .hamburger span {
+        width: 25px;
+        height: 3px;
+        background: white;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+        display: block;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
     }
     
     .mobile-nav-menu {
@@ -1777,14 +1806,21 @@ a:hover {
         gap: 1rem;
     }
     
+    .mobile-nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+    
     .mobile-nav-menu a {
         text-decoration: none;
         color: var(--text-primary);
         font-weight: 500;
         font-size: 1.1rem;
-        padding: 0.5rem 1rem;
+        padding: 1rem 2rem;
         transition: all 0.3s ease;
         border-radius: 8px;
+        display: block;
+        width: 100%;
     }
     
     .mobile-nav-menu a:hover,
