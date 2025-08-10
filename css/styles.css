@@ -1461,6 +1461,7 @@ a:hover {
     background: #000000;
     color: white;
     padding: var(--spacing-xxl) 0 var(--spacing-md);
+    margin-bottom: 80px; /* Space for reviews ticker (60px height + 20px buffer) */
 }
 
 .footer::before {
