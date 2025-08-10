@@ -1797,6 +1797,12 @@ a:hover {
         display: none;
     }
     
+    /* Remove flex space from nav-left and nav-right so logo can center */
+    .nav-left,
+    .nav-right {
+        flex: none;
+    }
+    
     /* Show hamburger - make it visible */
     .hamburger {
         display: flex;
