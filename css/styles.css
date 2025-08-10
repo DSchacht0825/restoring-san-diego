@@ -1925,39 +1925,47 @@ a:hover {
         gap: var(--spacing-lg);
     }
     
-    /* Fix all background images for mobile */
-    .hero-background,
-    .team-background {
+    /* AGGRESSIVE mobile background fixes - override all !important rules */
+    html body .hero-background,
+    html body .team-background,
+    html body .mission-background,
+    html body .creative-programs-background,
+    html body .music-programs-background {
         background-position: center center !important;
         background-size: cover !important;
         background-attachment: scroll !important;
     }
     
-    /* Specific background fixes */
-    .hero-background {
-        background-position: center 30% !important; /* Show more of the main hero image */
-    }
-    
-    .team-background {
+    /* Homepage hero - show center of image */  
+    html body .hero .hero-background {
         background-position: center center !important;
     }
     
-    /* Mission hero (who-we-are page) */
-    .mission-background {
+    /* Team page background */
+    html body .team-background {
         background-position: center center !important;
-        background-size: cover !important;
     }
     
-    /* All hero sections - ensure full height and proper display */
-    .hero,
-    .team-header {
-        min-height: 100vh;
-        background-attachment: scroll;
+    /* HITS page background - centered */
+    html body section#hits .hero-background {
+        background-position: center center !important;
     }
     
-    /* HITS hero background */
-    #hits.hero .hero-background {
-        background-position: center 40% !important;
+    /* Music page backgrounds */
+    html body #music .hero-background,
+    html body .music-programs-background {
+        background-position: center center !important;
+    }
+    
+    /* Art page backgrounds */
+    html body #art .hero-background,
+    html body .creative-programs-background {
+        background-position: center center !important;
+    }
+    
+    /* Mission page background */
+    html body .mission-background {
+        background-position: center center !important;
     }
 }
 
