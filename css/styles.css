@@ -1880,10 +1880,21 @@ a:hover {
         gap: var(--spacing-lg);
     }
     
-    /* HITS specific - ensure single column */
-    #hits .services-grid {
+    /* HITS specific - FORCE single column with maximum specificity */
+    html body section#hits .services-grid,
+    html body .hero#hits .services-grid,
+    html body #hits .services-grid {
+        display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 2rem !important;
+        background: lime !important; /* DEBUG: Green background to see if rule applies */
+    }
+    
+    /* Make each pillar obvious */
+    html body #hits .service-item {
+        background: red !important; /* DEBUG: Red background on each pillar */
+        margin-bottom: 2rem !important;
+        width: 100% !important;
     }
     
     /* Mobile Contact */
