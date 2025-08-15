@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - Restoring San Diego</title>
+    <meta name="description" content="Join our mission to transform lives in San Diego. Volunteer, become a mentor, or support our faith-based youth outreach programs.">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Get Involved - Restoring San Diego">
+    <meta property="og:description" content="Join our mission to transform lives in San Diego. Volunteer, become a mentor, or support our faith-based youth outreach programs.">
+    <meta property="og:url" content="https://restoring-sandiego.com/get-involved">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css?v=center-fix-2024">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="get-involved" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="nav-menu nav-left" id="navMenuLeft">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="who-we-are.html">Who We Are</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="hits.html">H.I.T.S.</a></li>
+                </ul>
+                <div class="nav-logo">
+                    <img src="images/icons/logo.png" alt="Restoring San Diego Logo" class="logo-img">
+                </div>
+                <ul class="nav-menu nav-right" id="navMenuRight">
+                    <li><a href="art.html">Creative Arts</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="get-involved.html" class="active">Get Involved</a></li>
+                    <li><a href="https://secure.givelively.org/donate/restoring-san-diego-corporation" target="_blank">Donate</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Separate Mobile Navigation -->
+        <div class="mobile-nav-overlay" id="mobileNavOverlay">
+            <div class="mobile-nav-header">
+                <img src="images/icons/logo.png" alt="Restoring San Diego Logo" class="mobile-logo">
+                <button class="mobile-close" id="mobileClose">&times;</button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="who-we-are.html">Who We Are</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="hits.html">H.I.T.S.</a></li>
+                <li><a href="art.html">Creative Arts</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="https://secure.givelively.org/donate/restoring-san-diego-corporation" target="_blank">Donate</a></li>
+            </ul>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">Get Involved</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <strong>Transform lives in your community.</strong> 
+                    Join us in reaching at-risk youth with love, hope, and purpose through mentorship, volunteering, and partnership.
+                </p>
+                <div class="hero-buttons">
+                    <a href="tel:+1-619-796-1844" class="btn btn-primary btn-large">Call: (619) 796-1844</a>
+                    <a href="mailto:Scott@restoringsandiego.org" class="btn btn-secondary btn-large">Email Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" style="position: relative; background-color: #000 !important; background: none !important;">
+        <div style="background-image: url('images/backroundgetinvolved.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.3;"></div>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85);"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2 style="color: white;">How Would You Like to Get Involved?</h2>
+                    <p style="color: white;">We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                
+                <form action="https://formspree.io/f/xdkdjjln" method="POST" class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="involvement">How would you like to get involved? *</label>
+                        <select id="involvement" name="involvement" required>
+                            <option value="">Select an option...</option>
+                            <option value="volunteer">Volunteer with our programs</option>
+                            <option value="mentor">Become a mentor</option>
+                            <option value="mailing-list">Join our mailing list</option>
+                            <option value="general-question">Ask a general question</option>
+                            <option value="partnership">Explore partnership opportunities</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us more about your interest in getting involved..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <span class="checkmark"></span>
+                            I'd like to receive updates about Restoring San Diego's programs and events
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary form-submit">
+                        Send Message
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Logo and Mission -->
+            <div class="footer-logo-section">
+                <img src="images/icons/logo.png" alt="Restoring San Diego Logo" class="footer-logo">
+                <p class="footer-mission">San Diego's leading faith-based nonprofit providing comprehensive at-risk youth programs, gang prevention services, and youth social services. Transforming troubled youth through evidence-based mentorship, boxing programs, creative arts, and community support throughout San Diego County.</p>
+            </div>
+            
+            <!-- Contact and Links -->
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><strong>Phone:</strong> <a href="tel:+1-619-796-1844">(619) 796-1844</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:Scott@restoringsandiego.org">Scott@restoringsandiego.org</a></p>
+                    <a href="https://secure.givelively.org/donate/restoring-san-diego-corporation" target="_blank" class="donation-button">
+                        💝 Donate Now
+                    </a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="who-we-are.html">Who We Are</a></li>
+                        <li><a href="art.html">Creative Arts</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="hits.html">H.I.T.S. Program</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61574599551314" class="social-link facebook" aria-label="Facebook" target="_blank">
+                            <span class="social-icon">f</span>
+                            <span class="social-text">Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/restoringsandiego/" class="social-link instagram" aria-label="Instagram" target="_blank">
+                            <span class="social-icon">📷</span>
+                            <span class="social-text">Instagram</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/scott-miner-b8bb2a305/" class="social-link linkedin" aria-label="LinkedIn" target="_blank">
+                            <span class="social-icon">in</span>
+                            <span class="social-text">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Restoring San Diego. All rights reserved. | 501(c)(3) Non-profit Organization | EIN: 93-3709621</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    
+    <!-- Form Submission JavaScript -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            // Show loading state
+            const submitBtn = document.querySelector('.form-submit');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Let the form submit naturally to Formspree
+            // Formspree will handle the redirect after submission
+        });
+    </script>
+</body>
+</html>
