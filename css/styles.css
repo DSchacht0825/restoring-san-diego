@@ -1901,6 +1901,9 @@ a:hover {
         text-align: center;
         max-width: 400px;
         margin: 0 auto 2rem auto;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
     }
     
     body#hits-page .service-item h3 {
@@ -2365,6 +2368,12 @@ a:hover {
         gap: 2rem !important;
         max-width: 1000px !important;
         margin: 0 auto !important;
+    }
+    
+    body#hits-page .service-item {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
     }
 }
 
