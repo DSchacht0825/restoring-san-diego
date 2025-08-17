@@ -1901,19 +1901,8 @@ a:hover {
         text-align: center;
         max-width: 400px;
         margin: 0 auto 2rem auto;
-        background: rgba(0, 0, 0, 0.8) !important;
-        border: 2px solid rgba(255, 255, 255, 0.2) !important;
-        border-radius: 12px !important;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
     }
     
-    /* HITS mobile contact items - no box styling, natural flow */
-    body#hits-page .contact-item {
-        background: none !important;
-        border: none !important;
-        border-radius: 0 !important;
-        box-shadow: none !important;
-    }
     
     body#hits-page .service-item h3 {
         font-size: 1.75rem;
@@ -2379,19 +2368,7 @@ a:hover {
         margin: 0 auto !important;
     }
     
-    body#hits-page .service-item {
-        background: rgba(0, 0, 0, 0.8) !important;
-        border: 2px solid rgba(255, 255, 255, 0.2) !important;
-        border-radius: 12px !important;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
-    }
     
-    body#hits-page .contact-item {
-        background: none !important;
-        border: none !important;
-        border-radius: 0 !important;
-        box-shadow: none !important;
-    }
 }
 
 /* Homepage Services - Force 3-column layout for Desktop */
