@@ -1906,6 +1906,13 @@ a:hover {
         box-shadow: none !important;
     }
     
+    /* HITS mobile contact items - remove white boxes */
+    body#hits-page .contact-item {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
     body#hits-page .service-item h3 {
         font-size: 1.75rem;
         margin-bottom: 1rem;
@@ -2371,6 +2378,12 @@ a:hover {
     }
     
     body#hits-page .service-item {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    body#hits-page .contact-item {
         background: transparent !important;
         border: none !important;
         box-shadow: none !important;
