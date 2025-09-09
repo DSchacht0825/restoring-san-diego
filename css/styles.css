@@ -2824,6 +2824,39 @@ a:hover {
     transform: scale(1.02);
 }
 
+/* Event Placeholder Styles */
+.event-placeholder {
+    text-align: center;
+    margin: var(--spacing-xl) auto;
+    max-width: 600px;
+}
+
+.placeholder-content {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xxl) var(--spacing-xl);
+    backdrop-filter: blur(10px);
+}
+
+.placeholder-content h3 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.placeholder-content p {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.placeholder-content p:last-child {
+    margin-bottom: 0;
+}
+
 .event-cta {
     text-align: center;
     margin-top: var(--spacing-xl);
