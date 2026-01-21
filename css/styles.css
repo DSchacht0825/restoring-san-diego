@@ -479,7 +479,7 @@ a:hover {
 
 /* HITS page specific hero overlay */
 #hits .hero-overlay {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.75);
 }
 
 /* Mission hero background */
@@ -2096,7 +2096,7 @@ a:hover {
 /* Serenity-Inspired Leadership Layout - Clean Grid */
 .leadership-compact-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
     margin-top: 2rem;
     max-width: 1200px;
@@ -2105,6 +2105,18 @@ a:hover {
     justify-items: center;
 }
 
+.leadership-compact-grid .leader-card-compact {
+    grid-column: span 2;
+}
+
+/* Center the bottom row (items 4 and 5) */
+.leadership-compact-grid .leader-card-compact:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.leadership-compact-grid .leader-card-compact:nth-child(5) {
+    grid-column: 4 / span 2;
+}
 
 /* Serenity-Inspired Leader Cards */
 .leader-card-compact {
